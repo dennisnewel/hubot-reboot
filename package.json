@@ -1,0 +1,29 @@
+{
+  "name": "hubot-reboot",
+  "version": "1.0.0",
+  "description": "Hubot restart command",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "restart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennisnewel/hubot-reboot.git"
+  },
+  "author": {
+    "name": "Dennis Newel",
+    "email": "dennis.newel@newelcorp.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dennisnewel/hubot-reboot/issues"
+  },
+  "homepage": "https://github.com/dennisnewel/hubot-reboot",
+  "maintainers": [
+    {
+        "name": "Dennis Newel",
+        "email": "dennis.newel@newelcorp.com"
+    }
+  ],
+  "readme": "https://github.com/dennisnewel/hubot-reboot/blob/master/README.md"
+}
