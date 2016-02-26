@@ -5,6 +5,7 @@
 #   HUBOT_AUTH_ADMIN - A comma separate list of user IDs
 #   HUBOT_REBOOT_COMMAND - set this to replace the default reboot commands
 #   HUBOT_REBOOT_MESSAGE - change the default message hubot posts as a reply to being rebooted
+#   HUBOT_REBOOT_DENIED - message to show users who are not admins
 #
 # Dependencies:
 #   hubot-auth
@@ -20,6 +21,7 @@
 
 reboot_command = process.env.HUBOT_REBOOT_COMMAND ? 'reboot';
 reboot_message = process.env.HUBOT_REBOOT_MESSAGE ? 'rebooting...brb';
+denied_message = process.env.HUBOT_REBOOT_DENIED ? "Sorry, the command you have entered has been restricted to admins only."
 
 module.exports = (robot) ->
     # Restrict commands
@@ -38,4 +40,4 @@ module.exports = (robot) ->
                 # following line logs the user id to the console; this is the value that's needed for HUBOT_AUTH_ADMIN 
                 console.log msg.message.user.id.toString() + ' tried to invoke an admin command!'
                 msg.message.done = true
-                msg.reply "Sorry, the command you have entered has been restricted to admins only."
+                msg.reply denied_message
