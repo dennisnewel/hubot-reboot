@@ -17,7 +17,7 @@ Then add **hubot-reboot** to your `external-scripts.json`:
 
 ## Dependencies
 
-Unless you want everyone to be able to restart hubot, also install hubot-auth.
+The script relies on `hubot-auth` to avoid letting everyone restart hubot.
 
 You should also be running hubot with something that automatically restarts the process if it dies...otherwise this command just kills hubot
 
